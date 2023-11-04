@@ -34,4 +34,4 @@ jobs:
     - run: cd app
     - run: BUNDLE_GEMFILE=app/Gemfile bundle install
     - name: Run tests
-      run: ruby run_tests.rb
+      run: ruby app/run_tests.rb
