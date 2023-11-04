@@ -32,6 +32,6 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
     - run: cd app
-    - run: bundle install
+    - run: BUNDLE_GEMFILE=app/Gemfile bundle install
     - name: Run tests
       run: ruby run_tests.rb
