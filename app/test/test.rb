@@ -9,7 +9,7 @@ class AppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    ::Sinatra::Application
   end
 
   def test_it_says_current_hostname
