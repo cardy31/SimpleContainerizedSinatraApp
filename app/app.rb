@@ -2,5 +2,5 @@ require 'sinatra'
 require 'socket'
 
 get '/' do
-  "Hostname: #{Socket.gethostname}"
+  erb :index, locals: { hostname: Socket.gethostname }
 end

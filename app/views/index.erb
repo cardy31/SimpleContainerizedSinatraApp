@@ -1,0 +1,132 @@
+<nav>
+  <div class="nav-inner">
+    <span class="nav-name">Rob Cardy</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Rob Cardy</h1>
+  <p class="subtitle">Software Developer &mdash; Infrastructure</p>
+  <p class="tagline">Building reliable systems, automating everything in between.</p>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About</h2>
+  <p>
+    I'm a software developer with a focus on infrastructure, containerization, and
+    automation. I enjoy building systems that are reliable, observable, and easy to
+    maintain &mdash; from CI/CD pipelines and container orchestration to monitoring
+    and cloud architecture. When I'm not writing code, I'm probably tinkering with
+    my Raspberry Pi cluster.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Infrastructure</h3>
+      <ul>
+        <li>Docker &amp; Docker Compose</li>
+        <li>Kubernetes</li>
+        <li>Terraform</li>
+        <li>Ansible</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Cloud</h3>
+      <ul>
+        <li>AWS</li>
+        <li>GCP</li>
+        <li>DigitalOcean</li>
+        <li>Cloudflare</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>CI/CD</h3>
+      <ul>
+        <li>GitHub Actions</li>
+        <li>Jenkins</li>
+        <li>ArgoCD</li>
+        <li>GitLab CI</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Languages</h3>
+      <ul>
+        <li>Ruby</li>
+        <li>Python</li>
+        <li>Go</li>
+        <li>Bash</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Monitoring</h3>
+      <ul>
+        <li>Prometheus</li>
+        <li>Grafana</li>
+        <li>ELK Stack</li>
+        <li>Datadog</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>OS &amp; Networking</h3>
+      <ul>
+        <li>Linux</li>
+        <li>Nginx</li>
+        <li>DNS / TLS</li>
+        <li>TCP/IP</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Pi Cluster Load Balancer</h3>
+      <p>
+        A containerized Sinatra application behind an Nginx reverse proxy,
+        deployed across a Raspberry Pi cluster to demonstrate container
+        orchestration and round-robin load balancing.
+      </p>
+      <span class="tech">Docker &middot; Ruby/Sinatra &middot; Nginx &middot; Raspberry Pi</span>
+    </div>
+    <div class="project-card">
+      <h3>Infrastructure as Code Toolkit</h3>
+      <p>
+        Terraform modules and Ansible playbooks for provisioning and configuring
+        cloud infrastructure with repeatable, version-controlled workflows.
+      </p>
+      <span class="tech">Terraform &middot; Ansible &middot; AWS &middot; GitHub Actions</span>
+    </div>
+    <div class="project-card">
+      <h3>Observability Stack</h3>
+      <p>
+        A self-hosted monitoring and alerting pipeline built with Prometheus,
+        Grafana, and Alertmanager for real-time visibility into system health.
+      </p>
+      <span class="tech">Prometheus &middot; Grafana &middot; Docker Compose</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-links">
+    <a href="https://github.com/cardy31">GitHub</a>
+    <a href="https://linkedin.com/in/robcardy">LinkedIn</a>
+    <a href="mailto:rob.cardy.31@gmail.com">Email</a>
+  </div>
+</section>
+
+<footer>
+  Served from: <%= hostname %>
+</footer>
