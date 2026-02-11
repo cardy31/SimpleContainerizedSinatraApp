@@ -3,8 +3,6 @@ services:
     build: ./app
     restart: always
     command: ["bundle","exec","rackup","--host","0.0.0.0","--port","4567"]
-    volumes:
-      - ./app/:/app
   proxy:
     image: nginx
     restart: always
